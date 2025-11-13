@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+#root {
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.page-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.page-item:last-child {
+  border-bottom: none;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #1976d2;
+  flex-shrink: 0;
+}
+
+.done-btn {
+  background-color: #FFCE22;
+  border: none;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 130%;
+  letter-spacing: 0px;
+  transition: background-color 0.2s;
+}
+
+.done-btn:hover {
+  background-color: #ffb800;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 0 0 350px;
+  padding: 32px 24px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  border: 2px dashed #b39ddb;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.done-button {
+  background-color: #ffd60a;
+  border: none;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background-color 0.2s;
+  letter-spacing: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 130%;
+}
+
+.done-button:hover {
+  background-color: #ffcc00;
+}
+
+.btn-1 {
+  background-color: #FFCE22;
+}
+
+.btn-1:hover {
+  background-color: #ffc507;
+}
+
+.btn-2 {
+  background-color: #FFD84D;
+}
+
+.btn-2:hover {
+  background-color: #ffd133;
+}
+
+.btn-3 {
+  background-color: #FFCE22;
+}
+
+.btn-3:hover {
+  background-color: #ffc507;
+}
+
+/* Center Panel */
+.center-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fafafa;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #9575cd;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+.tab.active {
+  border-bottom-color: #9575cd;
+  color: #9575cd;
+}
+
+.checkbox-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkbox-item:hover {
+  background-color: #e8e8e8;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #1976d2;
+  flex-shrink: 0;
+}
+
+.checkbox-label {
+  font-size: 13px;
+  color: #616161;
+  font-weight: 400;
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 0 0 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.right-panel .tab-bar {
+  margin: -24px -24px 24px -24px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.page-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.page-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.page-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 13px;
+  color: #616161;
+  font-weight: 400;
+}
+
+.page-item:hover {
+  background-color: #efefef;
+}
+
+.page-item:hover {
+  background-color: #efefef;
+}
+
+.done-button-right {
+  background-color: #ffd60a;
+  border: none;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 0px;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+  letter-spacing: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 130%;
+}
+
+.done-button-right:hover {
+  background-color: #ffcc00;
+}
+
+/* Scrollbar styling */
+.checkbox-list::-webkit-scrollbar,
+.page-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.checkbox-list::-webkit-scrollbar-track,
+.page-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.checkbox-list::-webkit-scrollbar-thumb,
+.page-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-list::-webkit-scrollbar-thumb:hover,
+.page-list::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
